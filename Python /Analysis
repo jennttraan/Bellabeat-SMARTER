@@ -94,7 +94,7 @@ sedentary_calories_corr = activity_df["SedentaryMinutes"].corr(activity_df["Calo
 print(f"Sedentary-Calories Corr is {sedentary_calories_corr}")
 
 ### pearson correlation is -0.1069.
-### This shows a small negative relationship between time spend sitting/inactive and alories burned
+### This shows a small negative relationship between time spend sitting/inactive and calories burned
 
 ## Plot data in a scatterplot
 plt.figure(figsize=(8, 4.21), dpi=100)
