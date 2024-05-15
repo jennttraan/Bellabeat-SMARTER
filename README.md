@@ -159,7 +159,7 @@ The logged feature was not used too often as there were many blanks in the data 
 
 ## Share
 
-Check out the daashboard on Tableau Public: Bellabeat Dashboard
+Check out the dashboard on Tableau Public: [Bellabeat Dashboard]([https://gaganpreetkaurkalsi.netlify.app](https://public.tableau.com/app/profile/jenny.tran8171/viz/Bellabeat_17157447917860/Dashboard#1) “Bellabeat”)
 
 ## Act
 
