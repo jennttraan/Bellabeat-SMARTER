@@ -87,11 +87,12 @@ All R code can be found here.
 1. Load the tidyverse package and data files
 2. Check to see if the data has been loaded correctly
 3. Convert the Id field to character data type
-4. Rename ActivityDate, SleepDay, and Date to convert to date data type
- activity <-activity %>%
+4. Rename ActivityDate, SleepDay, and Date to convert to date data type<br>
+
+ ```activity <-activity %>%
   mutate_at(vars(Id), as.character) %>%
   mutate_at(vars(ActivityDate), as.Date, format = "%m/%d/%y") %>%
-  rename("Day"="ActivityDate") 
+  rename("Day"="ActivityDate")``` 
 Combine data frames using left and right joins
 Add day of the week variable
 combined_data <-sleep %>%
