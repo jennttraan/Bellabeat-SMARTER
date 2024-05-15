@@ -1,4 +1,4 @@
-<b>## [How Can a Wellness Technology Company Play It Smart?]
+<b>## How Can a Wellness Technology Company Play It Smart?
 
 A Google Data Analytics Professional Certificate Capstone Project</b>
 
