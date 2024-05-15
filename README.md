@@ -107,7 +107,9 @@ combined_data <-sleep %>%
 ```
 <br>
 8. Filter and remove duplicate rows; count NAs and distinct entries using Id <br>
-```combined_data <-combined_data[!duplicated(combined_data), ]
+
+```
+combined_data <-combined_data[!duplicated(combined_data), ]
 sum(is.na(combined_data))
 n_distinct(combined_data$Id)
 n_distinct(sleep$Id)
