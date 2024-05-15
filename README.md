@@ -137,32 +137,34 @@ The average user weighs 72.04 kg, has a BMI of 25.19, and spent the most time do
 
 Users took the most steps on Sundays and the least number of steps on Fridays. As all the values are fairly high, the marketing team can conclude that users value the step feature of health fitness devices. They could also assume that the feature will be very useful for Bellabeat customers.
 
-Fairly Active Minutes by Day
+![Minutes of moderate activity per day](https://github.com/jennttraan/Case-Study-2-How-can-a-wellness-company-play-it-smart-/assets/144400508/d80401b9-18c0-4fc4-93d9-eb2b92f3c1d5)
+
 
 It is interesting to see that the amount of time spent being fairly active decreased on Wednesdays and then picks back up on Thursdays. This may be due to the fact that most people are going back to work on Monday and then may get discouraged or tired by Wednesday. Wednesday may also be a popular rest day, allowing them to resume their activities on Thursday.
 
-Distribution of Total Sleep Time
+![Distribution of sleep time](https://github.com/jennttraan/Case-Study-2-How-can-a-wellness-company-play-it-smart-/assets/144400508/a9868a46-add1-46f1-9498-d4656b536f72)
+
 
 From the above histogram, most people slept between 312 and 563 minutes (between 5.2 and 9.4 hours). Note that this does not include the total time spent in bed resting.
 
-Calories vs Time Slept
+![Total minutes Asleep vs Calories](https://github.com/jennttraan/Case-Study-2-How-can-a-wellness-company-play-it-smart-/assets/144400508/93ff9f10-a16d-4143-84ed-4af4e50da150)
+
 
 Besides a few outliers, calories were burned by those who slept between 5 and 7 hours. If only considering weight loss and calories burned, this aligns with the 5.2 to 9.4 hour sleep range, which may indicate that those who stay withint this range burn more calories.
 
-Logged Activity Distance by Day
+![Logged Activities Distance](https://github.com/jennttraan/Case-Study-2-How-can-a-wellness-company-play-it-smart-/assets/144400508/1d5df55f-03f0-4e4b-8df7-f30758dc4d01)
+
 
 The logged feature was not used too often as there were many blanks in the data and no records were available for Thursday and Friday. The highest days of logged distance were on the weekend or times when many people likely have free time to do physical activities.
 
-Share
+## Share
 
 Check out the daashboard on Tableau Public: Bellabeat Dashboard
 
-Act
+## Act
 
 The number of steps users took was the least on Friday which may be due to user becoming tired at the end of the week. As this is not limited to only FitBit customers, the marketing team could send notifications to users Thursday evenings and Friday and Saturday mornings encouraging users to continue being physical active throughout the day.
 
 Many users did not use the Logged Distance feature on the FitBit devices. This suggests that users would prefer to have their data collected automatically. The Bellabeat marketing team can decide not to a feature activity distance log function as many users seem to not use this.
 
 Compared to the data set size, there were very few entries for weight. Of those that were entered, about 2/3 were done manually. The individuals who did not log their weight may not have been concerned with losing weight or did not have the device needed to automatically record this data. Since many did not use the logged distance feature as well, the Bellabeat team could market weight devices like smart scales that automatically record this information.
-
-Other data sources, like the Mi Band fitness tracker data (04.2016 - present), could be useful for further exploration as this specific data set follows on individual over the course of six years.
