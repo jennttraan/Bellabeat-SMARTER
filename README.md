@@ -74,11 +74,12 @@ Excel will be used to load and take an initial pass for issues, R to transform a
 
 ### Initial Pass Through
 
-Make sure there are no blank entries in the data by using filters.
-`Convert Id field to text data type as no numerical equations are needed for this field.
-Convert ActivityDate from Datetime to Date types as no times are given in the data.
-In the dailyActivity_merged.csv  file, there are many instances where TotalSteps is zero and SedentaryMinutes is 1440; the number of calories burned vary between users. This is most likely due to the weight and height of the user. There are a few instances where the sedentary minutes is 1440 but the calories burned is 0.
-In the weightLogInfo_merged file, there are only two entries for the Fat field so this will not be used to draw insights.`
+Make sure there are no blank entries in the data by using filters.<br>
+
+   `Convert Id field to text data type as no numerical equations are needed for this field.
+    Convert ActivityDate from Datetime to Date types as no times are given in the data.
+    In the dailyActivity_merged.csv  file, there are many instances where TotalSteps is zero and SedentaryMinutes is 1440; the number of calories burned vary between users. This      is most likely due to the weight and height of the user. There are a few instances where the sedentary minutes is 1440 but the calories burned is 0.
+    In the weightLogInfo_merged file, there are only two entries for the Fat field so this will not be used to draw insights.`
 
 Transform and Explore
 
