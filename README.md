@@ -1,6 +1,6 @@
-How Can a Wellness Technology Company Play It Smart?
+<b>How Can a Wellness Technology Company Play It Smart?
 
-A Google Data Analytics Professional Certificate Capstone Project
+A Google Data Analytics Professional Certificate Capstone Project</b>
 
 
 Bellabeat is a company that develops fitness products for women. Their products include smart water bottles, fashionable fitness watches and jewelry, and yoga mats. Users can access their health data collected through these devices in the Bellabeat app.
