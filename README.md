@@ -89,7 +89,8 @@ All R code can be found here.
 3. Convert the Id field to character data type
 4. Rename ActivityDate, SleepDay, and Date to convert to date data type<br>
 
- ```activity <-activity %>%
+ ```
+activity <-activity %>%
   mutate_at(vars(Id), as.character) %>%
   mutate_at(vars(ActivityDate), as.Date, format = "%m/%d/%y") %>%
   rename("Day"="ActivityDate")
@@ -97,31 +98,42 @@ All R code can be found here.
 <br>
 
 6. Combine data frames using left and right joins
-Add day of the week variable
+7. Add day of the week variable <br>
+```
 combined_data <-sleep %>%
   right_join(activity, by=c("Id","Day")) %>%
   left_join(weight, by=c("Id", "Day")) %>%
   mutate(Weekday = weekdays(as.Date(Day, "m/%d/%Y")))
-Filter and remove duplicate rows; count NAs and distinct entries using Id
+```
+<br>
+8. Filter and remove duplicate rows; count NAs and distinct entries using Id <br>
+```
 combined_data <-combined_data[!duplicated(combined_data), ]
 sum(is.na(combined_data))
 n_distinct(combined_data$Id)
 n_distinct(sleep$Id)
 n_distinct(weight$Id)
+```
+ <br>
+ 
 The final data frame has 940 variables with 25 variables. There are 33 distinct Id entries total. The number of distinct users in dailyActivity, sleepDay, and weightLogInfo are 33, 24, and 8, respectively. There are 6893 NAs in the combined data. This is not surprising as there is only weight data from eight users and not all users logged sleep information.
 
-Analyze
+## Analyze
 
-Select summary statistics and visualizations
+## Select summary statistics and visualizations
 
+```
 combined_data %>%
 select(TotalMinutesAsleep, TotalSteps, TotalDistance, VeryActiveMinutes, FairlyActiveMinutes, LightlyActiveMinutes, SedentaryMinutes, Calories, WeightKg, Fat, BMI, IsManualReport) %>%
 summary()
-Summary Statistics
+```
+![Summary Statistics](https://github.com/jennttraan/Case-Study-2-How-can-a-wellness-company-play-it-smart-/assets/144400508/3fa555cb-1404-4396-9452-ee5a9662cb8e)
+
 
 The average user weighs 72.04 kg, has a BMI of 25.19, and spent the most time doing light activities. On average, they also slept 6.9 hours, took 7638 steps, and traveled 5.49 km per day.
 
-Steps by Day
+![Total steps by day](https://github.com/jennttraan/Case-Study-2-How-can-a-wellness-company-play-it-smart-/assets/144400508/c4a06f8c-a08e-4740-870d-5bbafb9d3bc3)
+
 
 Users took the most steps on Sundays and the least number of steps on Fridays. As all the values are fairly high, the marketing team can conclude that users value the step feature of health fitness devices. They could also assume that the feature will be very useful for Bellabeat customers.
 
