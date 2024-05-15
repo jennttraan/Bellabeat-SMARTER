@@ -66,7 +66,7 @@ As the FitBit data has the limitations listed above, an additional data source w
 
 ### Choosing Data Files
 
-As dailyActivity_merged.csv  provides a good summary of steps and calories burned and the sleepDay_merged.csv file provides sleep data these are good overall files to use to analyze patricipant usage. As fitness devices are generally used to track overall health and weight, the file weightLogInfo_merged containing weight data will also be used.
+As `dailyActivity_merged.csv`  provides a good summary of steps and calories burned and the `sleepDay_merged.csv` file provides sleep data these are good overall files to use to analyze patricipant usage. As fitness devices are generally used to track overall health and weight, the file `weightLogInfo_merged` containing weight data will also be used.
 
 ### Applications
 
@@ -78,11 +78,11 @@ Excel will be used to load and take an initial pass for issues, R to transform a
 2. Convert Id field to text data type as no numerical equations are needed for this field.
 3. Convert ActivityDate from Datetime to Date types as no times are given in the data.
 4. In the `dailyActivity_merged.csv` file, there are many instances where TotalSteps is zero and SedentaryMinutes is 1440; the number of calories burned vary between users. This is most likely due to the weight and height of the user. There are a few instances where the sedentary minutes is 1440 but the calories burned is 0.
-5. In the weightLogInfo_merged file, there are only two entries for the Fat field so this will not be used to draw insights.`
+5. In the `weightLogInfo_merged` file, there are only two entries for the Fat field so this will not be used to draw insights.`
 
 ### Transform and Explore
 
-All R code can be found here.
+All R code can be found [here](https://github.com/jennttraan/Bellabeat-SMARTER/blob/main/R%20Script).
 
 1. Load the tidyverse package and data files
 2. Check to see if the data has been loaded correctly
