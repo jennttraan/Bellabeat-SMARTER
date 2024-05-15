@@ -2,6 +2,9 @@
 
 ## A Google Data Analytics Professional Certificate Capstone Project
 
+https://www.theskinnyconfidential.com/wp-content/uploads/2021/03/IMG_3B5510F819DD-1-e1616526935214.jpeg![image](https://github.com/jennttraan/Case-Study-2-How-can-a-wellness-company-play-it-smart-/assets/144400508/c7fea711-cf82-4169-a8a0-fc5f13a5af4a)
+
+
 
 Bellabeat is a company that develops fitness products for women. Their products include smart water bottles, fashionable fitness watches and jewelry, and yoga mats. Users can access their health data collected through these devices in the Bellabeat app.
 
