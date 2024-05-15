@@ -42,13 +42,13 @@ What are some trends in smart device usage?
 How could these trends apply to Bellabeat customers?
 How could these trends help influence Bellabeat marketing strategy?
 
-## Prepare___
+## Prepare
 
 ### Data source:
 
 FitBit Fitness Tracker Data on Kaggle in 18 CSV files. The data contains smart health data from personal fitness trackers for thirty fitbit users. The data was collected via a survey of personal tracker data, including minute-level output for physical activity, hear rate, and sleep monitoring, through Amazon Mechanical Turk between March 12, 2016 and May 12, 2016. It was updated two years ago as of August 2022. The data includes information about daily activity, steps, and heart rate.
 
-Limitations:
+### Limitations:
 
 The sample size is small as only 30 individuals were considered.
 
@@ -58,29 +58,28 @@ Since the data was collected through a survey, the results may not be accurate a
 
 Data pertaining to weight only has information from eight users. Furthermore, most entries in one of the fields are blank and about two-thirds of the weight entries were manually entered.
 
-Supporting data (future exploration):
+### Supporting data (future exploration):
 
 As the FitBit data has the limitations listed above, an additional data source would be useful in the analysis. The Mi Band fitness tracker data (04.2016 - present) contains data relating to steps and sleep monitoring for one invididual from April 2016 to July 2022 collected from the Mi Band from Xiaomi. The data is stored in two CSV files, one for steps and one for sleep. Using this data, the analysis can also consider one individual over an extended period of time. The uploader of the data does note that there were about two weeks worth of step data that was corrupted so these data points were defaulted to zero.
 
-For a more throuogh look at the data see the Data Dictionary and Documentation file.
+## Process
 
-Process
-
-Choosing Data Files
+### Choosing Data Files
 
 As dailyActivity_merged.csv  provides a good summary of steps and calories burned and the sleepDay_merged.csv file provides sleep data these are good overall files to use to analyze patricipant usage. As fitness devices are generally used to track overall health and weight, the file weightLogInfo_merged containing weight data will also be used.
 
-Applications
+### Applications
 
-Excel will be used to load and take an initial pass for issues, R to transform and explore the data, and Tableau to interactively visuallize the data.
+Excel will be used to load and take an initial pass for issues, R to transform and explore the data, and Tableau to interactively visualize the data.
 
-Initial Pass Through
+### Initial Pass Through
 
 Make sure there are no blank entries in the data by using filters.
-Convert Id field to text data type as no numerical equations are needed for this field.
+`Convert Id field to text data type as no numerical equations are needed for this field.
 Convert ActivityDate from Datetime to Date types as no times are given in the data.
 In the dailyActivity_merged.csv  file, there are many instances where TotalSteps is zero and SedentaryMinutes is 1440; the number of calories burned vary between users. This is most likely due to the weight and height of the user. There are a few instances where the sedentary minutes is 1440 but the calories burned is 0.
-In the weightLogInfo_merged file, there are only two entries for the Fat field so this will not be used to draw insights.
+In the weightLogInfo_merged file, there are only two entries for the Fat field so this will not be used to draw insights.`
+
 Transform and Explore
 
 All R code can be found here.
