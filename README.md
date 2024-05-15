@@ -107,8 +107,7 @@ combined_data <-sleep %>%
 ```
 <br>
 8. Filter and remove duplicate rows; count NAs and distinct entries using Id <br>
-```
-combined_data <-combined_data[!duplicated(combined_data), ]
+```combined_data <-combined_data[!duplicated(combined_data), ]
 sum(is.na(combined_data))
 n_distinct(combined_data$Id)
 n_distinct(sleep$Id)
@@ -122,11 +121,11 @@ The final data frame has 940 variables with 25 variables. There are 33 distinct 
 
 ## Select summary statistics and visualizations
 
-```
-combined_data %>%
+```combined_data %>%
 select(TotalMinutesAsleep, TotalSteps, TotalDistance, VeryActiveMinutes, FairlyActiveMinutes, LightlyActiveMinutes, SedentaryMinutes, Calories, WeightKg, Fat, BMI, IsManualReport) %>%
 summary()
 ```
+
 ![Summary Statistics](https://github.com/jennttraan/Case-Study-2-How-can-a-wellness-company-play-it-smart-/assets/144400508/3fa555cb-1404-4396-9452-ee5a9662cb8e)
 
 
@@ -159,7 +158,7 @@ The logged feature was not used too often as there were many blanks in the data 
 
 ## Share
 
-Check out the dashboard on Tableau Public: [Bellabeat Dashboard]([https://gaganpreetkaurkalsi.netlify.app](https://public.tableau.com/app/profile/jenny.tran8171/viz/Bellabeat_17157447917860/Dashboard#1) “Bellabeat”)
+Check out the dashboard on Tableau Public: [Bellabeat Dashboard](https://public.tableau.com/app/profile/jenny.tran8171/viz/Bellabeat_17157447917860/Dashboard#1) “Bellabeat”)
 
 ## Act
 
