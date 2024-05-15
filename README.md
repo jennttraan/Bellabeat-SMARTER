@@ -121,7 +121,8 @@ The final data frame has 940 variables with 25 variables. There are 33 distinct 
 
 ## Select summary statistics and visualizations
 
-```combined_data %>%
+```
+combined_data %>%
 select(TotalMinutesAsleep, TotalSteps, TotalDistance, VeryActiveMinutes, FairlyActiveMinutes, LightlyActiveMinutes, SedentaryMinutes, Calories, WeightKg, Fat, BMI, IsManualReport) %>%
 summary()
 ```
