@@ -2,7 +2,9 @@
 
 ## A Google Data Analytics Professional Certificate Capstone Project
 
-![IMG_3B5510F819DD-1-e1616526935214](https://github.com/jennttraan/Case-Study-2-How-can-a-wellness-company-play-it-smart-/assets/144400508/3cf05c31-5d4a-47c4-9fbb-79754f9f3e83)
+![Untitled design](https://github.com/jennttraan/Case-Study-2-How-can-a-wellness-company-play-it-smart-/assets/144400508/bb956383-3407-4717-a809-d1412e0b8cf7)
+
+
 
 
 
