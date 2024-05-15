@@ -92,8 +92,11 @@ All R code can be found here.
  ```activity <-activity %>%
   mutate_at(vars(Id), as.character) %>%
   mutate_at(vars(ActivityDate), as.Date, format = "%m/%d/%y") %>%
-  rename("Day"="ActivityDate")``` 
-Combine data frames using left and right joins
+  rename("Day"="ActivityDate")
+```
+<br>
+
+6. Combine data frames using left and right joins
 Add day of the week variable
 combined_data <-sleep %>%
   right_join(activity, by=c("Id","Day")) %>%
