@@ -72,21 +72,20 @@ As dailyActivity_merged.csv  provides a good summary of steps and calories burne
 
 Excel will be used to load and take an initial pass for issues, R to transform and explore the data, and Tableau to interactively visualize the data.
 
-### Initial Pass Through
+### First...
 
-Make sure there are no blank entries in the data by using filters.<br>
+1. Make sure there are no blank entries in the data by using filters.
+2. Convert Id field to text data type as no numerical equations are needed for this field.
+3. Convert ActivityDate from Datetime to Date types as no times are given in the data.
+4. In the `dailyActivity_merged.csv` file, there are many instances where TotalSteps is zero and SedentaryMinutes is 1440; the number of calories burned vary between users. This is most likely due to the weight and height of the user. There are a few instances where the sedentary minutes is 1440 but the calories burned is 0.
+5. In the weightLogInfo_merged file, there are only two entries for the Fat field so this will not be used to draw insights.`
 
-   `Convert Id field to text data type as no numerical equations are needed for this field.
-    Convert ActivityDate from Datetime to Date types as no times are given in the data.
-    In the dailyActivity_merged.csv  file, there are many instances where TotalSteps is zero and SedentaryMinutes is 1440; the number of calories burned vary between users. This      is most likely due to the weight and height of the user. There are a few instances where the sedentary minutes is 1440 but the calories burned is 0.
-    In the weightLogInfo_merged file, there are only two entries for the Fat field so this will not be used to draw insights.`
-
-Transform and Explore
+### Transform and Explore
 
 All R code can be found here.
 
-Load the tidyverse package and data files
-Check to see if the data has been loaded correctly
+1. Load the tidyverse package and data files
+2. Check to see if the data has been loaded correctly
 Convert the Id field to character data type
 Rename ActivityDate, SleepDay, and Date to convert to date data type
 activity <-activity %>%
